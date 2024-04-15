@@ -11,7 +11,7 @@
 ```java
 spring.cloud.config.server.git.uri=https://github.com/DeyvidGar/config-repository-microservices.git
 spring.cloud.config.server.git.clone-on-start=true
-spring.cloud.config.server.git.default-label=master
+spring.cloud.config.server.git.default-label=main
 ```
 
 <p>In spring boot project we can implement this architecture microservices server using the dependencies:</p>
@@ -23,6 +23,8 @@ spring.cloud.config.server.git.default-label=master
 ![Architecture diagram.](https://raw.githubusercontent.com/DeyvidGar/assets/master/Config-server.png)
 
 ## Endpoints
+
+- To retrieve the repositories for the microservices.
 
 >**GET**: localhost:8888
 
@@ -75,6 +77,17 @@ https://github.com/DeyvidGar/config-repository-microservices.git
 ```console
 https://github.com/DeyvidGar/initial-artifact-microservice.git
 ```
+
+### 5. Start up Gateway
+
+<p>Finally steps is create the microservice apps, for example you can clone the artifact of a microservice.</p>
+
+<p>You can clone the repository:</p>
+
+```console
+https://github.com/DeyvidGar/api-gateway.git
+```
+
 
 ## What i need?
 
